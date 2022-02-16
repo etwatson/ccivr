@@ -1,4 +1,4 @@
-![CCIVR_LOGO](/Users/ohata/Dropbox/02 cisNATs in EMT/94 CCIVR logo/CCIVR_logo_ver3.png)
+![CCIVR_LOGO](https://github.com/CCIVR/ccivr/blob/main/CCIVR_logo.png)
 
 
 # CCIVR

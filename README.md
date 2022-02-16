@@ -51,7 +51,7 @@ Attaching other gene annotations is available during the CCIVR processing by add
 
 Attaching information for expression profiling obtained from RNA-seq analysis is also available during the CCIVR processing by adding extra columns including “TPM”, “FPKM”, “fold-change”, “padj”, and so on in the input file. 
 
-Please see [the test file] (absolute path of the test tile) for an example of the input file. 
+Please see [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/TGF_test-data_ver2.csv) for an example of the input file. 
 (The test file contains human gene datasets accompanied by expression profiling of Huh-7 cells with TGFß
 stimulation, which is consistent with the input file used for the CCIVR analysis in figure 4 of our paper, Ohhata T *et al*., *submitted*)
 
@@ -70,7 +70,7 @@ By default, output files will be saved in the same directory of the input file. 
 ccivr [path of input CSV] --output [path of saving directory]
 ```
 
-If it runs successfully, processing status will be displayed as follows (this is an example from running with [the test file] (absolute path of the test tile)):
+If it runs successfully, processing status will be displayed as follows (this is an example from running with [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/TGF_test-data_ver2.csv)):
 
 ```
 Reading [path of input CSV]
@@ -102,9 +102,9 @@ Two CSV formatted output files "Table.csv" and "Summary.csv" will be generated a
 **Table.csv**: it contains a list of all extracted cis-NATs pairs accompanied by their structural characteristics.  
 **Summary.csv**: it contains the absolute number of each type of extracted cis-NATs with its percentages to the total genes. 
 
-An example of "Table.csv" from [the test file] (absolute path of the test tile), you can find [here](absolute path of Table.csv).
+An example of "Table.csv" from [https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Table.csv] (absolute path of the test tile), you can find [here](absolute path of Table.csv).
 
-An example of "Summary.csv" from [the test file] (absolute path of the test tile), you can find [here](absolute path of Summary.csv).
+An example of "Summary.csv" from [https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Summary.csv] (absolute path of the test tile), you can find [here](absolute path of Summary.csv).
 
 
 

@@ -102,9 +102,9 @@ Two CSV formatted output files "Table.csv" and "Summary.csv" will be generated a
 **Table.csv**: it contains a list of all extracted cis-NATs pairs accompanied by their structural characteristics.  
 **Summary.csv**: it contains the absolute number of each type of extracted cis-NATs with its percentages to the total genes. 
 
-An example of "Table.csv" from [https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Table.csv](absolute path of the test tile), you can find [here](absolute path of Table.csv).
+An example of "Table.csv" from  [the test file](https://github.com/CCIVR/ccivr/blob/main/data/TGF_test-data_ver2.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Table.csv).
 
-An example of "Summary.csv" from [https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Summary.csv](absolute path of the test tile), you can find [here](absolute path of Summary.csv).
+An example of "Summary.csv" from  [the test file](https://github.com/CCIVR/ccivr/blob/main/data/TGF_test-data_ver2.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/ccivr_output/Summary.csv).
 
 
 

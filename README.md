@@ -108,7 +108,7 @@ An example of "Summary.csv" from  [the test file](https://github.com/CCIVR/ccivr
 
 
 
-To complete the whole process of CCIVR with [the test file] (absolute path of the test tile), it may take from a few to dozens of minutes by a standard-powered computer. (For example, it takes 6 minutes 34 seconds by iMac 2017, equipped with 3.4 GHz Intel Core i5)
+To complete the whole process of CCIVR with the test file, it may take from a few to dozens of minutes by a standard-powered computer. (For example, it takes 6 minutes 34 seconds by iMac 2017, equipped with 3.4 GHz Intel Core i5)
 
 ## Uninstallation
 When you no longer use the package, you can uninstall it from the computer by typing the commands as follows:
@@ -121,7 +121,7 @@ pip uninstall ccivr
 Tatsuya Ohhata conceptualized CCIVR. Maya Suzuki and Tatsuya Ohhata designed the CCIVR algorithm. Maya Suzuki implemented the CCIVR software.
 
 ## License
-CCIVR is licensed under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+CCIVR is licensed under the [MIT license](https://github.com/CCIVR/ccivr/blob/main/LICENSE).
 
 ## Reference
 Ohhata T *et al*., *submitted*

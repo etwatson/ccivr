@@ -51,7 +51,7 @@ Attaching other gene annotations is available during the CCIVR process by adding
 
 Attaching information for expression profiling obtained from RNA-seq analysis is also available during the CCIVR process by adding extra columns such as **“TPM”**, **“FPKM”**, **“fold_change”**, **“padj”**, and so on in the input file. 
 
-Please see [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv) for an example of the input file. 
+Please see [the test file](https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv) for an example of the input file. 
 (The test file contains human gene datasets accompanied by expression profiling of human hepatoma Huh-7 cells with TGFß
 stimulation, which is consistent with the input file used for the CCIVR analysis in figure 4 of our paper, Ohhata T and Suzuki M *et al*., *submitted*)
 
@@ -70,7 +70,7 @@ By default, output files will be saved in the same directory of the input file. 
 ccivr [path of input CSV] --output [path of saving directory]
 ```
 
-If it runs successfully, processing status will be displayed as follows (this is an example from running with [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv):
+If it runs successfully, processing status will be displayed as follows (this is an example from running with [the test file](https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv):
 
 ```
 Reading [path of input CSV]
@@ -102,9 +102,9 @@ Two CSV formatted output files **"Table.csv"** and **"Summary.csv"** will be gen
 **Table.csv**: it contains a list of all extracted cis-NATs accompanied by their structural characteristics.  
 **Summary.csv**: it contains the absolute number of each type of extracted cis-NATs with its percentages to the total genes. 
 
-An example of "Table.csv" obtained from [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/Table.csv).
+An example of "Table.csv" obtained from [the test file](https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/Table.csv).
 
-An example of "Summary.csv" obtained from [the test file] (https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/Summary.csv).
+An example of "Summary.csv" obtained from [the test file](https://github.com/CCIVR/ccivr/blob/main/data/Test_file.csv), you can find [here](https://github.com/CCIVR/ccivr/blob/main/data/Summary.csv).
 
 
 

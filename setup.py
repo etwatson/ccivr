@@ -7,7 +7,7 @@ setup(
         name="ccivr",
         version="0.1.0",
         license="MIT license",
-        author="Maya Suzuki",
+        author="Tatsuya Ohhata",
         author_email="ohhata@hama-med.ac.jp",
         description="Extract cisNats from RNA-seq data",
         long_description=readme,

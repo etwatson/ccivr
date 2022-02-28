@@ -25,5 +25,4 @@ setup(
                 "ccivr = ccivr.ccivr:main"
             ]
         },
-        python_requires='>=3.8',
     )

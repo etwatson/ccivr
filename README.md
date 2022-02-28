@@ -17,6 +17,10 @@ You can install CCIVR via a package manager `pip` by typing the commands as foll
 ```
 pip install git+https://github.com/CCIVR/ccivr.git
 ```  
+or
+```
+pip3 install git+https://github.com/CCIVR/ccivr.git
+```
 
 For checking whether CCIVR is correctly installed, please type the commands as follows:
 

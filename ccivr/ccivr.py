@@ -33,7 +33,6 @@ def find_cisnats(df0,df1,filter):
         s0 = df0.at[i,'Start']
         e0 = df0.at[i,'End']
 
-        # 前提として、df1内に遺伝子iと同じ染色体番号の遺伝子が全くない場合を除外する
         if chr_i not in df1_chr_map.keys():
             continue
         
@@ -127,14 +126,12 @@ def write_summary(df, total):
 
     result.at['Total genes','count'] = total
 
-    # 全Typeで算出
     count_all = df['id'].nunique()
     rate_all = '{:.2%}'.format(count_all/total)
 
     result.at['genes with cis-Nats','count'] = count_all
     result.at['genes with cis-Nats','rate'] = rate_all
 
-    # Typeごとに算出
     cntype_map = dict(list(df.groupby('Type')))
     
     for cntype in cntype_map.keys():

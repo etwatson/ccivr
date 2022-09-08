@@ -1,5 +1,6 @@
 import argparse
 import os
+from ccivr.__init__ import __version__
 
 def get_path():
     
@@ -15,6 +16,11 @@ def get_path():
         help=
             'the path of the directory to save results, '
             'if not specified, files would be stored in the same location as input file.'
+        )
+
+    parser.add_argument('-v', '--version', action='version',
+        version=__version__,
+        help='show the version number and exit'
         )
 
     args = parser.parse_args()

@@ -1,13 +1,15 @@
 from setuptools import setup, find_packages
 
+from ccivr import __version__
+
 with open("README.md", mode="r", encoding="utf-8") as fh:
     readme = fh.read()
 
 setup(
         name="ccivr",
-        version="0.1.0",
+        version=__version__,
         license="MIT license",
-        author="Tatsuya Ohhata",
+        author="Maya Suzuki",
         author_email="ohhata@hama-med.ac.jp",
         description="Extract cisNats from RNA-seq data",
         long_description=readme,

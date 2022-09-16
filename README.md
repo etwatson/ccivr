@@ -4,7 +4,7 @@
 # CCIVR
 
 ## Overview
-**CCIVR** (**C**omprehensive **C**is-NATs **I**dentifier **V**ia **R**NA-seq data) is a Python package tool that facilitates the identification of total cis-NATs (cis-natural antisense transcripts) from gene datasets. CCIVR requires a CSV-formatted input file that contains gene datasets with their locational information including chromosome number where the genes are located, their strand direction, transcription start site (TSS), and transcription termination site (TTS), with or without expression profiling data from RNA-seq, including TPM, FPKM, fold-change, and padj (q-value). CCIVR generates two CSV-formatted output files: a table file containing a list of total extracted cis-NATs accompanied by their structural characteristics, including embedded (EB), fully-overlapped (FO), head-to-head (HH), and tail-to-tail (TT) types; a summary file containing the absolute number and percentage of each type of extracted cis-NAT. For more details, please see Ohhata *et al*., submitted.
+**CCIVR** (**C**omprehensive **C**is-NATs **I**dentifier **V**ia **R**NA-seq data) is a Python package tool that facilitates the identification of total cis-NATs (cis-natural antisense transcripts) from gene datasets. CCIVR requires a CSV-formatted input file that contains gene datasets with their locational information including chromosome number where the genes are located, their strand direction, transcription start site (TSS), and transcription termination site (TTS), with or without expression profiling data from RNA-seq, including TPM, FPKM, fold-change, and padj (q-value). CCIVR generates two CSV-formatted output files: a table file containing a list of total extracted cis-NATs accompanied by their structural characteristics, including embedded (EB), fully-overlapped (FO), head-to-head (HH), and tail-to-tail (TT) types; a summary file containing the absolute number and percentage of each type of extracted cis-NAT. For more details, please see Ohhata T *et al.*, ***Sci Rep.***, 12:15525, 2022.
 
 ## Requirement
 
@@ -125,4 +125,4 @@ Tatsuya Ohhata conceptualized CCIVR. Maya Suzuki and Tatsuya Ohhata designed the
 CCIVR is licensed under the [MIT license](LICENSE).
 
 ## Reference
-Ohhata *et al*., submitted.
+Ohhata T *et al.*, ***Sci Rep.***, 12:15525, 2022.

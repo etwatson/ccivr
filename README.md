@@ -54,7 +54,7 @@ Attaching information for expression profiling obtained from RNA-seq analysis is
 
 Please see [the test file](data/Test_file.csv) for an example of the input file. 
 (The test file contains human gene datasets accompanied by expression profiling of human hepatoma Huh-7 cells with TGFß
-stimulation, which is consistent with the input file used for the CCIVR analysis in figure 4 of our paper, Ohhata *et al*., submitted)
+stimulation, which is consistent with the input file used for the CCIVR analysis in figure 4 of our paper, Ohhata T *et al.*, ***Sci Rep.***, 12:15525, 2022.)
 
 
 ## Usage

@@ -11,12 +11,18 @@
 * Python 3.8+
 
 ## Installation
-
 You can install CCIVR via a package manager `pip` by typing the following command:           
 
 ```
 pip install git+https://github.com/CCIVR/ccivr.git
 ```
+
+It should be noted, however, that this doesn't work when you don't have git on your computer.　In that case, please download the ZIP file offered by this site and type the following command:
+
+```
+pip install [full path of unzipped package]
+```
+
 If the package manager `pip` does not work, please try `pip3` instead.
 
 To check whether CCIVR is correctly installed, please type the following command:

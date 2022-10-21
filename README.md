@@ -17,7 +17,7 @@ You can install CCIVR via a package manager `pip` by typing the following comman
 pip install git+https://github.com/CCIVR/ccivr.git
 ```
 
-It should be noted, however, that this doesn't work when you don't have git on your computer.　In that case, please download the ZIP file offered by this site and type the following command:
+It should be noted, however, that this doesn't work when you don't have git on your computer. In that case, please download the ZIP file offered by this site and type the following command:
 
 ```
 pip install [full path of unzipped package]

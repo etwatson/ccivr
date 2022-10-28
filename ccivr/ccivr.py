@@ -5,7 +5,7 @@ import ccivr.exception as e
 def find_cisnats(df0,df1,filter):
     '''
     Finds cisNats of genes on one strand from those on the other strand.
-    df0 and df1 are the sets of information about genes on different stranads.
+    df0 and df1 are the sets of information about genes on different strands.
     One finding process is composed by following steps.
         1. Picking up one target gene from df0.
         2. Extracting its cisNats from df1.
@@ -70,8 +70,8 @@ def extract_one_type_cisnats(cntype, genes_plus, genes_minus):
 
     Arguments:
         cntype (str): the type of cisNats to extract. "EB" / "FO" / "HH" / "TT" 
-        genes_plus (DataFrame): the sets of information about genes on the plus stranad.
-        genes_minus (DataFrame): the sets of information about genes on the minus stranad.
+        genes_plus (DataFrame): the sets of information about genes on the plus strand.
+        genes_minus (DataFrame): the sets of information about genes on the minus strand.
     '''
     
     # Criteria for locational extracting
@@ -132,17 +132,23 @@ def write_summary(df, total):
     result.at['genes with cis-Nats','count'] = count_all
     result.at['genes with cis-Nats','rate'] = rate_all
 
+    cntype_list = ['EB','FO','HH','TT']
     cntype_map = dict(list(df.groupby('Type')))
     
-    for cntype in cntype_map.keys():
+    for cntype in cntype_list:
 
-        each_type_df = cntype_map[cntype]
+        if cntype not in cntype_map.keys():
+            result.at[cntype,'count'] = 0
+            result.at[cntype,'rate'] = '0.00%'
 
-        count = each_type_df['id'].nunique()
-        rate = '{:.2%}'.format(count/total)
+        else:
+            each_type_df = cntype_map[cntype]
 
-        result.at[cntype,'count'] = count
-        result.at[cntype,'rate'] = rate
+            count = each_type_df['id'].nunique()
+            rate = '{:.2%}'.format(count/total)
+
+            result.at[cntype,'count'] = count
+            result.at[cntype,'rate'] = rate
 
     return result
 

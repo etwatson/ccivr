@@ -32,11 +32,6 @@ def get_path():
     else:
         output_dir = os.path.dirname(input_file)
 
-    os.makedirs(os.path.join(output_dir, 'ccivr_output'), exist_ok=True)
-
-    output_file_table = os.path.join(output_dir, 'ccivr_output', 'Table.csv')
-    output_file_summary = os.path.join(output_dir, 'ccivr_output', 'Summary.csv')
-
     class Paths:
         def __init__(self,input,output:list):
             self.input = input
@@ -44,7 +39,7 @@ def get_path():
 
     paths = Paths(
         input = input_file, 
-        output = [output_file_table, output_file_summary]
+        output = output_dir
         )
 
     return paths

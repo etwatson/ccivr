@@ -1,4 +1,6 @@
+from webbrowser import get
 import pandas as pd
+import os
 from ccivr.getargs import get_path
 import ccivr.exception as e
 
@@ -193,10 +195,17 @@ def main():
     summary = write_summary(table,genes_total)
     print_summary(summary)
 
-    print('Writing the table to ' + paths.output[0])
-    table.to_csv(paths.output[0], index=False)
-    print('Writing the summary to ' + paths.output[1])
-    summary.to_csv(paths.output[1], index=True)
+    # Making a new directory and output the results
+    os.makedirs(os.path.join(paths.output, 'ccivr_output'), exist_ok=True)
+    ccivr_output = os.path.join(paths.output, 'ccivr_output')
+
+    output_table = os.path.join(ccivr_output, 'Table.csv')
+    output_summary = os.path.join(ccivr_output, 'Summary.csv')
+
+    print('Writing the table to ' + output_table)
+    table.to_csv(output_table, index=False)
+    print('Writing the summary to ' + output_summary)
+    summary.to_csv(output_summary, index=True)
 
 
 if __name__ == '__main__':

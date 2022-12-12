@@ -133,4 +133,4 @@ CCIVR is licensed under the [MIT license](LICENSE).
 ## Reference
 Ohhata T *et al.*, ***Sci Rep.***, 12:15525, 2022.
 
-Updated December 7th, 2022
+Updated on December 7th, 2022

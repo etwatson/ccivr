@@ -80,15 +80,15 @@ def extract_one_type_cisnats(cntype, genes_plus, genes_minus):
     FILTER_PLUS_MINUS= {
         "EB":"(s1 >= s0) & (e1 <= e0)",
         "FO":"(s1 <= s0) & (e1 >= e0)",
-        "HH":"(s1 <= s0) & (e1 >= s0) & (e1 <= e0)",
-        "TT":"(s1 >= s0) & (s1 <= e0) & (e1 >= e0)",
+        "HH":"(s1 < s0) & (e1 >= s0) & (e1 <= e0)",
+        "TT":"(s1 >= s0) & (s1 <= e0) & (e1 > e0)",
         }
     
     FILTER_MINUS_PLUS= {
         "EB":"(s1 >= s0) & (e1 <= e0)",
         "FO":"(s1 <= s0) & (e1 >= e0)",
-        "HH":"(s1 >= s0) & (s1 <= e0) & (e1 >= e0)",
-        "TT":"(s1 <= s0) & (e1 >= s0) & (e1 <= e0)",
+        "HH":"(s1 >= s0) & (s1 <= e0) & (e1 > e0)",
+        "TT":"(s1 < s0) & (e1 >= s0) & (e1 <= e0)",
         }
 
     print(cntype)
